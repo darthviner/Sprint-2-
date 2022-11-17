@@ -6,18 +6,11 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import models.Courier;
 import models.Credentials;
-import org.apache.commons.lang3.builder.ToStringExclude;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import utils.CourierClient;
 import utils.CourierGenerator;
-
-import java.util.Random;
-
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
