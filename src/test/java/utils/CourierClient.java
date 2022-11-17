@@ -1,13 +1,9 @@
 package utils;
-
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
-import io.restassured.RestAssured;
 import models.Courier;
 import models.Credentials;
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 
 public class CourierClient extends Client{
     private static String CREATE_PATH = "/api/v1/courier";
